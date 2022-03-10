@@ -1,0 +1,215 @@
+/* 
+.navbar-view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (42).jpg")no-repeat center center;
+    background-size: cover;
+} */
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+.navbar {
+    background-color: transparent;
+}
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+/* @media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+} */
+
+#form-login.show{
+    background-color: #00000040;
+    display: block;
+    padding-right: 17px;
+}
+
+/* .nav-item.active {
+    border-bottom: 2px solid #ff0000;
+} */
+.banner{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    visibility: hidden;
+    transition: linear .5s;
+}
+.banner.active {
+    opacity: 1;
+    visibility: unset;
+    transition: linear .5s;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+.navbar{
+    color: #000;
+    transition: linear .3s;
+}
+.navbar.active {
+    color: #fff;
+    background-color: #4285F4;
+    transition: linear .3s;
+}
+
+.navbar-dark .navbar-brand{
+    font-size: 30px;
+}
+.about{
+    width: 100%;
+    color: #929292;
+    text-align: center;
+}
+.about1 {
+    color:#269ad8;
+}
+.aboutimg{
+    height: 80%;
+}
+.text-small {
+    font-size: 0.75rem;
+}
+.cardsale{
+    text-decoration: line-through ; 
+    font-weight: bold;
+    font-size: 17px;
+    color: royalblue;
+}
+.cardgoc{
+    font-weight: bold;
+    font-size: 17px;
+    color: royalblue;
+}
+
+.overlay img{
+    height: 235px;
+}
+.votekhachhang{
+    width: 100%;
+}
+.titlekh{
+    text-align: center;
+}
+/* .overlay2 ._1card-img-top{
+    display: block; margin-left: auto; margin-right: auto;
+    width: 70%;
+    border-radius: 50%;
+} */
+.abc{
+    width: 50%;
+}
+.mx-auto img{
+    width: 50%;
+}
+.titledanhgiatukhachhang{
+    color: #929292;
+}
+.pricing{
+    display: flex;
+}
+.contactt{
+    display: block;
+    text-align: center;
+}
+.mdb-color{
+    background-color: #269ad8 !important;
+}
+
+.d-flex-content-center {
+    display: flex;
+    justify-content: center;
+}
+.phanthiet{
+    max-width: 100% !important;
+}
+/* .imgtrongnuoc{
+    width: 250px;
+    height: 200px; 
+    overflow: hidden; 
+}
+.imgtrongnuoc img{
+    width: 100%; 
+    height: 100%;  
+    transition-duration: 1s;
+}
+.imgtrongnuoc:hover{
+    transform: scale(1.2);
+    cursor: pointer; 
+} */
+
+.commitment-box{
+    width: 125%;
+    display: flex;
+    border-radius: 5px;
+    border: 13 solid #ccc;
+    padding: 10px;
+}
+.commitment-image{
+    padding-top: 10px;
+}
+.commitment-image img{
+    width: 60px;
+    height: 60px;
+}
+.commitment-content{
+    width: 167px;
+    font-size: 16px;
+
+}
+
+.tourtrongnuoc {
+    align-items: center;;
+}
+.fa-2x
+{
+    margin-left: 27px;
+    padding-top: 1px;
+    cursor: pointer;
+}
+
+
+
+
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+ 
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.img-center {
+    padding-top: 32px;
+    padding-bottom: 2%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}

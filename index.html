@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dịch vụ du lịch số 1</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Menu và Banner-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">
+                    LTC TraVel
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item" id="menu1">
+                            <a class="nav-link" href="#menu1" href="gioithieu.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item" id="menu2">
+                            <a class="nav-link" href="#menu2" href="dichvu.html">Dịch Vụ</a>
+                        </li>
+                        <li class="nav-item" id="menu3">
+                            <a class="nav-link" href="#menu3" href="thanhtuu.html">Thành Tựu</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <span id="btn-login"><i class="far fa-user fa-2x"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navbar-view view intro-2 pt-3">
+            <div class="">
+                <div class="mask rgba-indigo-slight flex-center banner active" style="background-image: url(./image/dulich.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="active-pink-3 active-pink-4 form-inline">
+                                    <input class="form-control" type="text" placeholder="Nhập mã giảm giá của bạn..."
+                                        aria-label="Search" style="flex: 1;">
+                                    <button style="padding-top: .6rem; padding-bottom: .6rem;"
+                                        class="btn aqua-gradient btn-rounded waves-effec btn-sm my-0"
+                                        type="submit">Áp dụng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mask rgba-indigo-slight flex-center banner" style="background-image: url(./image/banner.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="active-pink-3 active-pink-4 form-inline">
+                                    <input class="form-control" type="text" placeholder="Bạn muốn đi đâu nào?"
+                                        aria-label="Search" style="flex: 1;">
+                                    <button style="padding-top: .6rem; padding-bottom: .6rem;"
+                                        class="btn aqua-gradient btn-rounded waves-effec btn-sm my-0"
+                                        type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mask rgba-indigo-slight flex-center banner" style="background-image: url(./image/banner1.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="active-pink-3 active-pink-4 form-inline">
+                                    <input class="form-control" type="text" placeholder="Bạn muốn đi đâu nào?"
+                                        aria-label="Search" style="flex: 1;">
+                                    <button style="padding-top: .6rem; padding-bottom: .6rem;"
+                                        class="btn aqua-gradient btn-rounded waves-effec btn-sm my-0"
+                                        type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--End Menu và Banner-->
+
+    <!-- form Đăng nhập -->
+    <div class="modal fade" id="form-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Đăng nhập</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="defaultForm-username" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-username">Tên tài khoản</label>
+                </div>
+
+                <div class="md-form mb-4"> 
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="defaultForm-pass" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-pass">Mật khẩu</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default">Login</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- End form đăng nhập -->
+
+    <!--Main Layout-->
+    <main>
+        
+        <div class="container">
+
+        <!-- Giới Thiệu -->
+            <div class="row">
+                <div class="col-12 title h1 my-4 about">Giới Thiệu</div>
+                <div class="col-12 col-lg-8">
+                    <h3 class="about1">CHÀO MỪNG QUÝ KHÁCH ĐẾN VỚI LTC TRAVEL</h3>
+                    <h5 class="text-justify">Trong xu thế hội nhập Quốc tế, du khách được thư giãn, nghỉ ngơi, tìm hiểu và khám phá những
+                        điều mới lạ
+                        để trau dồi thêm tri thức, để cuộc sống thêm phong phú và để quay lại say mê với công việc hơn
+                        đang ngày
+                        càng trở thành nhu cầu thiết yếu.</h5>
+                    <h5 class="text-justify">Với đội ngũ nhân viên trẻ tuổi, sáng tạo, sự “tận tâm”, yêu nghề và tôn trọng quyền lợi của
+                        khách hàng
+                        chính là kim chỉ nam cho mọi hành động của chúng tôi với khao khát đưa thương hiệu LTC TRAVEL
+                        đến gần hơn
+                        với Quý khách hàng trong nước và quốc tế.</h5>
+                    <a href="gioithieu.html">Xem thêm</a>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 mt-lg-0"><img class="aboutimg" src="./image/dulic1.jpg" alt="" width="100%"></div>
+            </div>
+        <!-- End giới thiệu  -->
+
+
+
+
+
+        <!-- Dịch Vụ -->
+            <div class="row">
+                <a href="dichvu.html" class="about"><div class="col-12 title h1 my-4 ">Dịch Vụ</div></a>
+                <div class="col-12">
+                    <!-- Card deck -->
+                    <div class="card-deck row no-gutters">
+                        <!-- Card -->
+                        <div class="col-12 col-md-6 col-lg-4 row no-gutters">
+                            <div class="card mb-4">
+
+                                <!--Card image-->
+                                
+                                <div class="overlay">
+                                    <img class="card-img-top" src="./image/halongbay.jpg" alt="Card image cap">
+                                    <a href="tourvinhhalong.html">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+
+                                    <!--Title-->
+                                    <h4 class="card-title" style="color: #909090;">Tour Tham Quan: VỊNH HẠ LONG - QUẢNG NINH
+                                    </h4>
+                                    <!--Text-->
+                                    <div class="card-text cardsale" style="color: #858585;">5.000.000 VNĐ</div>
+                                    <div class="card-text cardgoc"
+                                        style="font-weight: bold; font-size: 22px; color: #269ad8;">3.990.000 VNĐ
+                                    </div>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <a href="tourvinhhalong.html"><button type="button" class="btn btn-light-blue btn-md">Xem Ngay</button></a>
+
+                                </div>
+
+                            </div>
+                        
+                        </div>
+                        <!-- Card -->
+
+                        <!-- Card -->
+                        <div class="col-12 col-md-6 col-lg-4 row no-gutters">
+                            <div class="card mb-4">
+
+                                <!--Card image-->
+                                <div class="overlay">
+                                    <img class="card-img-top" src="./image/eogioquynhon.jpg" alt="Card image cap">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+
+                                    <!--Title-->
+                                    <h4 class="card-title" style="color: #909090;">Tour trong nước : QUY NHƠN - KỲ CO - EO
+                                        GIÓ</h4>
+                                    <!--Text-->
+                                    <div class="card-text cardsale" style="color: #858585;">1.500.000 VNĐ</div>
+                                    <div class="card-text cardgoc"
+                                        style="font-weight: bold; font-size: 22px; color: #269ad8;">990.000 VNĐ
+                                    </div>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <a href="tourquynhonkico.html"><button type="button" class="btn btn-light-blue btn-md">Xem Ngay</button></a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <!-- Card -->
+                        <div class="col-12 col-md-6 col-lg-4 row no-gutters">
+                            <div class="card mb-4">
+                                <!--Card image-->
+                                <div class="overlay">
+                                    <img class="card-img-top" src="./image/backinh.jpg" alt="Card image cap">
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+                                    <!--Title-->
+                                    <h4 class="card-title" style="color: #909090;">Tour ngoài nước: BẮC KINH - THƯỢNG HẢI</h4>
+                                    <!--Text-->
+                                    <div class="card-text cardsale" style="color: #858585;">15.000.000 VNĐ</div>
+                                    <div class="card-text cardgoc"
+                                        style="font-weight: bold; font-size: 22px; color: #269ad8;">9.990.000 VNĐ
+                                    </div>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <a href="tourbackinhthuonghai.html"><button type="button" class="btn btn-light-blue btn-md">Xem Ngay</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                        <!-- Card -->
+                        <div class="col-12 col-md-6 d-lg-none row no-gutters">
+                            <div class="card mb-4">
+
+                                <!--Card image-->
+                                <div class="overlay">
+                                    <img class="card-img-top" src="./image/halongbay.jpg" alt="Card image cap">
+                                    <a href="#!">
+                                        <div class="mask rgba-white-slight"></div>
+                                    </a>
+                                </div>
+
+                                <!--Card content-->
+                                <div class="card-body">
+
+                                    <!--Title-->
+                                    <h4 class="card-title" style="color: #909090;">Tour Tngoài nước: BẮC KINH - TÔ CHÂU -
+                                        HÀNG CHÂU - THƯỢNG
+                                        HẢI</h4>
+                                    <!--Text-->
+                                    <div class="card-text cardsale" style="color: #858585;">5.000.000 VNĐ</div>
+                                    <div class="card-text cardgoc"
+                                        style="font-weight: bold; font-size: 22px; color: #269ad8;">3.990.000 VNĐ
+                                    </div>
+                                    <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                                    <button type="button" class="btn btn-light-blue btn-md">Xem Ngay</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Card -->
+
+                    </div>
+                    <!-- Card deck -->
+                </div>
+            </div>
+        <!-- End Dịch Vụ  -->
+
+
+
+
+
+        <!-- Thành Tựu -->
+            <div class="row">
+                <div class="col-12 title h1 my-4 about">Thành Tựu</div>
+                <div class="col-12">
+                                <!-- Section: Blog v.3 -->
+                                <section class="my-5">
+                                    <!-- Grid row -->
+                                    <div class="row">
+                                
+                                                <!-- Grid column -->
+                                                <div class="col-lg-5 col-xl-4">
+                                            
+                                                    <!-- Featured image -->
+                                                    <div class="view overlay rounded z-depth-1-half mb-lg-0 mt-0">
+                                                        <a href="thanhtuu.html"><img class="img-fluid" src="./image/thanhtuu.jpg" alt="Sample image" style="height: auto;"></a>
+                                                        
+                                                    </div>
+                                            
+                                                </div>
+                                                <!-- Grid column -->
+                                            
+                                                <!-- Grid column -->
+                                                <div class="col-lg-7 col-xl-8">
+                                            
+                                                    <!-- Post title -->
+                                                    <h3 class="font-weight-bold mb-3"><strong>Các giải thưởng đạt được:</strong></h3>
+                                                    <!-- Excerpt -->
+                                                    <p class="dark-grey-text">- Ngày 8/4/2017, tại Chương trình khảo sát và cấp chứng thư thương hiệu, nhãn hiệu nổi tiếng lần thứ 6 do Viện Sở Hữu Trí Tuệ quốc tế tổ chức, LTC Travel đã vinh dự được chọn vào Top 10 thương hiệu, nhãn hiệu nổi tiếng của năm 2017. </p>
+                                                    <!-- Read more button -->
+                                                    <a class="btn btn-primary btn-md" href="thanhtuu.html"> Xem tiếp</a>
+                                            
+                                                </div>
+                                                <!-- Grid column -->
+                                
+                                    </div>
+                                    <!-- Grid row -->
+                                
+                                </section>
+                                <!-- Section: Blog v.3 -->
+                </div>
+
+            </div>
+        <!-- End Thành tựu -->
+
+
+
+
+
+
+
+
+
+
+        <!--  Ý kiến Khách hàng -->
+            <div class="row">
+                <!-- Section: Testimonials v.3 -->
+                <section class="team-section text-center my-5">
+
+                    <!-- Section heading -->
+                    <h2 class="h1-responsive font-weight-bold my-5 titledanhgiatukhachhang">Khách hàng nói gì về LTC
+                        TRAVEL</h2>
+                    <!-- Section description -->
+                    <p class="dark-grey-text w-responsive mx-auto mb-5"></p>
+
+                    <!--Grid row-->
+                    <div class="row text-center">
+
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-md-0 mb-5">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto">
+                                    <img src="./image/anh.jpg" class="rounded-circle z-depth-1 img-fluid">
+                                </div>
+                                <!--Content-->
+                                <h4 class="font-weight-bold dark-grey-text mt-4">Thu Trinh</h4>
+                                <h6 class="font-weight-bold blue-text my-3">Nhân viên văn phòng</h6>
+                                <p class="font-weight-normal dark-grey-text">
+                                    <i class="fas fa-quote-left pr-2"></i>Dịch vụ tốt, nhưng không có người yêu đi cùng
+                                    nên cho 4.5 * :)))
+                                </p>
+                                <!--Review-->
+                                <div class="orange-text">
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star-half-alt"> </i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4 mb-md-0 mb-5">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto">
+                                    <img src="./image/anh1.jpg" class="rounded-circle z-depth-1 img-fluid">
+                                </div>
+                                <!--Content-->
+                                <h4 class="font-weight-bold dark-grey-text mt-4">Thành Nam</h4>
+                                <h6 class="font-weight-bold blue-text my-3">Design</h6>
+                                <p class="font-weight-normal dark-grey-text">
+                                    <i class="fas fa-quote-left pr-2"></i>Tốt, hướng dẫn tận tình, vui vẻ</p>
+                                <!--Review-->
+                                <div class="orange-text">
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Grid column-->
+
+                        <!--Grid column-->
+                        <div class="col-md-4">
+
+                            <div class="testimonial">
+                                <!--Avatar-->
+                                <div class="avatar mx-auto">
+                                    <img src="./image/anh3.jpg" class="rounded-circle z-depth-1 img-fluid">
+                                </div>
+                                <!--Content-->
+                                <h4 class="font-weight-bold dark-grey-text mt-4">Thanh Thuỷ</h4>
+                                <h6 class="font-weight-bold blue-text my-3">Photographer</h6>
+                                <p class="font-weight-normal dark-grey-text">
+                                    <i class="fas fa-quote-left pr-2"></i>Giá rẻ mà còn chất lượng nữa hihi</p>
+                                <!--Review-->
+                                <div class="orange-text">
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="fas fa-star"> </i>
+                                    <i class="far fa-star"> </i>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!--Grid column-->
+
+                    </div>
+                    <!--Grid row-->
+
+                </section>
+                <!-- Section: Testimonials v.3 -->
+            </div>
+        <!-- End Ý kiến Khách hàng -->
+
+
+
+
+
+
+        <!-- Tour trải nghiệm -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 mb-2 d-flex-content-center">
+                            <div class="card text-center mb-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">TRẢI NGHIỆM ĐẶC BIỆT TRONG HÀNH TRÌNH TOUR ĐÔNG BẮC...</h5>
+                                    </a>
+                                    <p class="card-text">Cùng tham quan các địa điểm du lịch ở Đông Bắc nước ta...</p>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalContactForm">Tham Gia
+                                        Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2 d-flex-content-center">
+                            <div class="card text-center mb-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">DU LỊCH TẾT NGUYÊN ĐÁN: ĐÀ NẴNG - HUẾ - NHA TRANG...</h5>
+                                    </a>
+                                    <p class="card-text">Cùng tham quan các địa điểm du lịch ở nước ta...</p>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalContactForm">Tham Gia
+                                        Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-2 d-flex-content-center">
+                            <div class="card text-center mb-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">HÀNH TRÌNH DU LỊCH MIỀN TÂY: CẦN THƠ - VŨNG TÀU...</h5>
+                                    </a>
+                                    <p class="card-text">Cùng tham quan các địa điểm du lịch ở miền Tây nước ta...</p>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalContactForm">Tham Gia
+                                        Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-lg-none mb-2 d-flex-content-center">
+                            <div class="card text-center mb-3" style="width: 20rem;">
+                                <div class="card-body">
+                                    <a href="">
+                                        <h5 class="card-title">TRẢI NGHIỆM ĐẶC BIỆT TRONG HÀNH TRÌNH TOUR ĐÔNG BẮC...</h5>
+                                    </a>
+                                    <p class="card-text">Cùng tham quan các địa điểm du lịch ở Đông Bắc nước ta...</p>
+                                    <button class="btn btn-primary" data-toggle="modal" data-target="#modalContactForm">Tham Gia
+                                        Ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- End Tour trải nghiệm -->
+
+
+
+
+
+
+
+        <!-- Liên hệ -->
+            <div class="row contactt">
+                <!-- Section: Contact v.2 -->
+                <section class="my-5 contactt">
+                    <!-- Section heading -->
+                    <div class="col-12 title h1 my-4 about">Liên Hệ</div>
+                    <!-- Section description -->
+                    <p class="text-center w-responsive mx-auto mb-5 contact">Mọi thắc mắc, Quý khách hàng có thể gửi
+                        mail về cho
+                        chúng tôi</p>
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <div class="col-12 col-md-4 col-lg-6 text-center">
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    <i class="fas fa-map-marker-alt fa-2x blue-text"></i>
+                                    <p>Cao Lỗ, P4, Quận 8, TP.HCM</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-phone fa-2x mt-4 blue-text"></i>
+                                    <p>036 666 6566</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope fa-2x mt-4 blue-text"></i>
+                                    <p class="mb-0">lethanhcong1009@gmail.com</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-md-8 col-lg-6 mb-md-0 mb-5">
+
+                            <form action="" id="form-contact">
+
+                                <!-- Grid row -->
+                                <div class="row">
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="contact-name" class="form-control" required>
+                                            <label for="contact-name" class="">Họ và tên</label>
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-6">
+                                        <div class="md-form mb-0">
+                                            <input type="email" id="contact-email" class="form-control" required>
+                                            <label for="contact-email" class="">Email</label>
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+
+                                </div>
+                                <!-- Grid row -->
+
+                                <!-- Grid row -->
+                                <div class="row">
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-12">
+                                        <div class="md-form mb-0">
+                                            <input type="text" id="contact-Subject" class="form-control" required>
+                                            <label for="contact-Subject" class="">Chủ đề</label>
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+
+                                </div>
+                                <!-- Grid row -->
+
+                                <!-- Grid row -->
+                                <div class="row">
+
+                                    <!-- Grid column -->
+                                    <div class="col-md-12">
+                                        <div class="md-form">
+                                            <textarea id="contact-message" class="form-control md-textarea"
+                                                rows="3" required></textarea>
+                                            <label for="contact-message">Nội dung</label>
+                                        </div>
+                                    </div>
+                                    <!-- Grid column -->
+
+                                </div>
+                                <!-- Grid row -->
+    
+                                <div class="text-center text-md-left">
+                                    <button type="submit" class="btn btn-primary btn-md">Gửi</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+
+                    </div>
+                    <!-- Grid row -->
+
+                </section>
+                <!-- Section: Contact v.2 -->
+            </div>
+        <!-- End Liên hệ -->
+
+
+        </div>
+
+
+    </main>
+    <!--End Main Layout-->
+
+
+
+
+    
+    <!-- Footer  -->
+    <footer class="mdb-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Footer -->
+                    <footer class="page-footer font-small pt-4">
+
+                        <!-- Footer Links -->
+                        <div class="container text-center text-md-left">
+
+                            <!-- Footer links -->
+                            <div class="row text-center text-md-left mt-3 pb-3">
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">LTC TRAVEL</h6>
+                                    <p>Đại lý Du lịch Trực tuyến Hàng đầu Việt Nam 2020</p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <hr class="w-100 clearfix d-md-none">
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Người dùng</h6>
+                                    <p>
+                                        <a href="#!">Tài khoản</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Tour vừa xem</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Ưu đãi</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Tích điểm</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <hr class="w-100 clearfix d-md-none">
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Chính sách dịch vụ</h6>
+                                    <p>
+                                        <a href="#!">Điều khoản và dịch vụ</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Quy chế hoạt động</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Câu hỏi thường gặp</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Tuyển dụng</a>
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <hr class="w-100 clearfix d-md-none">
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Liên Hệ</h6>
+                                    <p>
+                                        <i class="fas fa-home mr-3"></i>Cao Lỗ, P4, Quận 8, TP.HCM</p>
+                                    <p>
+                                        <i class="fas fa-envelope mr-3"></i>lethanhcong1009@gmail.com</p>
+                                    <p>
+                                        <i class="fas fa-phone mr-3"></i> 036 666 6566</p>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Footer links -->
+
+                            <hr>
+
+                            <!-- Grid row -->
+                            <div class="row d-flex align-items-center">
+
+                                <!-- Grid column -->
+                                <div class="col-md-7 col-lg-8">
+
+                                    <!--Copyright-->
+                                    <p class="text-center text-md-left">© 2020 Copyright:
+                                        <a href="lethanhcong.tk">
+                                            <strong> lethanhcong.tk</strong>
+                                        </a>
+                                    </p>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                                    <!-- Social buttons -->
+                                    <div class="text-center text-md-right">
+                                        <ul class="list-unstyled list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                        </div>
+                        <!-- Footer Links -->
+
+                    </footer>
+                    <!-- Footer -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+
+
+    <!-- modal click nút Tham gia ngay -->
+    <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+                        <i class="fas fa-user prefix grey-text"></i>
+                        <input type="text" id="form34" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form34">Your name</label>
+                    </div>
+
+                    <div class="md-form mb-5">
+                        <i class="fas fa-envelope prefix grey-text"></i>
+                        <input type="email" id="form29" class="form-control validate">
+                        <label data-error="wrong" data-success="right" for="form29">Your email</label>
+                    </div>
+
+                    <div class="md-form mb-3">
+                        <i class="fas fa-tag prefix grey-text"></i>
+                        <span style="margin-left: 40px;line-height: 32px; font-size: 16px; font-weight: bold; user-select: none;">Dịch vụ cần tư vấn</span>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="cb1" checked>
+                                <label class="custom-control-label" for="cb1">Tour Ngoài Nước</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="cb2" checked>
+                                <label class="custom-control-label" for="cb2">Tour Trong nước</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="cb3" checked>
+                                <label class="custom-control-label" for="cb3">Vé Máy Bay</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="cb4" checked>
+                                <label class="custom-control-label" for="cb4">Khách Sạn</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fas fa-pencil prefix grey-text"></i>
+                        <textarea type="text" id="form8" class="md-textarea form-control" rows="4"></textarea>
+                        <label data-error="wrong" data-success="right" for="form8">Nội dung</label>
+                    </div>
+                    
+                </div>
+                <div class="modal-footer d-flex justify-content-center">
+                    <button class="btn btn-unique">Gửi<i class="fas fa-paper-plane-o ml-1"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dịch vụ du lịch số 1</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--Menu và Banner-->
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand logo" href="index.html">
+                    LTC TraVel
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Trang Chủ<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="gioithieu.html">Giới Thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="dichvu.html">Dịch Vụ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="thanhtuu.html">Thành Tựu</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="lienhe.html">Liên Hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <span id="btn-login"><i class="far fa-user fa-2x"></i></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="navbar-view view intro-2 pt-3">
+            <div class="">
+                <div class="mask rgba-indigo-slight flex-center banner active" style="background-image: url(./image/dulich.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="active-pink-3 active-pink-4 form-inline">
+                                    <input class="form-control" type="text" placeholder="Bạn muốn đi đâu nào?"
+                                        aria-label="Search" style="flex: 1;">
+                                    <button style="padding-top: .6rem; padding-bottom: .6rem;"
+                                        class="btn aqua-gradient btn-rounded waves-effec btn-sm my-0"
+                                        type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mask rgba-indigo-slight flex-center banner" style="background-image: url(./image/banner.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="active-pink-3 active-pink-4 form-inline">
+                                    <input class="form-control" type="text" placeholder="Bạn muốn đi đâu nào?"
+                                        aria-label="Search" style="flex: 1;">
+                                    <button style="padding-top: .6rem; padding-bottom: .6rem;"
+                                        class="btn aqua-gradient btn-rounded waves-effec btn-sm my-0"
+                                        type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mask rgba-indigo-slight flex-center banner" style="background-image: url(./image/banner1.jpg);">
+                    <div class="container">
+                        <div class="row justify-content-center ">
+                            <div class="col-12 col-md-10 col-lg-8">
+                                <div class="active-pink-3 active-pink-4 form-inline">
+                                    <input class="form-control" type="text" placeholder="Bạn muốn đi đâu nào?"
+                                        aria-label="Search" style="flex: 1;">
+                                    <button style="padding-top: .6rem; padding-bottom: .6rem;"
+                                        class="btn aqua-gradient btn-rounded waves-effec btn-sm my-0"
+                                        type="submit">Search</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!--End Menu và Banner-->
+
+    <!-- form Đăng nhập -->
+    <div class="modal fade" id="form-login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header text-center">
+                <h4 class="modal-title w-100 font-weight-bold">Đăng nhập</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mx-3">
+                <div class="md-form mb-5">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input type="text" id="defaultForm-username" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-username">Tên tài khoản</label>
+                </div>
+
+                <div class="md-form mb-4">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input type="password" id="defaultForm-pass" class="form-control validate">
+                <label data-error="wrong" data-success="right" for="defaultForm-pass">Mật khẩu</label>
+                </div>
+
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+                <button class="btn btn-default">Login</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- End form đăng nhập -->
+
+
+
+
+
+
+
+    <!-- Giới thiệu -->
+    <main class="mb-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 title h1 my-4 about">Giới Thiệu</div>
+                <div class="col-12">
+                    <h3 class="about1">CHÀO MỪNG QUÝ KHÁCH ĐẾN VỚI LTC TRAVEL</h3>
+                    <h5 class="text-justify">Trong xu thế hội nhập Quốc tế, du khách được thư giãn, nghỉ ngơi, tìm hiểu và khám phá những
+                        điều mới lạ để trau dồi thêm tri thức, để cuộc sống thêm phong phú và để quay lại say mê với
+                        công việc hơn đang ngày càng trở thành nhu cầu thiết yếu.</h5>
+                    <h5 class="text-justify">Với đội ngũ nhân viên trẻ tuổi, sáng tạo, sự “tận tâm”, yêu nghề và tôn trọng quyền lợi của
+                        khách hàng chính là kim chỉ nam cho mọi hành động của chúng tôi với khao khát đưa thương hiệu
+                        Hanoi Green Tour đến gần hơn với Quý khách hàng trong nước và quốc tế.</h5>
+                    <h5 class="text-justify">Công ty Du lịch với thương hiệu LTC TRAVEL là đơn vị chuyên cung cấp các tour du lịch NỘI ĐỊA,
+                        OUTBOUND, INBOUND, dịch vụ về du lịch, tổ chức sự kiện trong và ngoài nước có uy tín.</h5>
+                </div>
+                <div class="col-8 offset-2" style="display: flex; align-items: center;"><img class="aboutimg" src="./image/dulic1.jpg" alt="" style="object-fit: cover; object-position: center; width: 100%;"></div>
+                <div class="col-12">
+                    <h5 class="text-justify">Trụ sở chính : 180 Cao Lỗ, Phường 4, Quận 8, TP.HCM</h5>
+                    <h5 class="text-justify">Tel : 036.666.0560</h5>
+                    <h5 class="text-justify">Website : <a href="index.html "> http://lethanhcong.tk </a> </h5>
+                    <h5 class="text-justify">Email: <a href=""> lethanhcong1009@gmail.com  </a></h5>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!--End Giới thiệu-->
+
+
+
+    <!-- Footer -->
+    <footer class="mdb-color">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Footer -->
+                    <footer class="page-footer font-small pt-4">
+
+                        <!-- Footer Links -->
+                        <div class="container text-center text-md-left">
+
+                            <!-- Footer links -->
+                            <div class="row text-center text-md-left mt-3 pb-3">
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">LTC TRAVEL</h6>
+                                    <p>Đại lý Du lịch Trực tuyến Hàng đầu Việt Nam 2020</p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <hr class="w-100 clearfix d-md-none">
+
+                                <!-- Grid column -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Người dùng</h6>
+                                    <p>
+                                        <a href="#!">Tài khoản</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Tour vừa xem</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Ưu đãi</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Tích điểm</a>
+                                    </p>
+                                </div>
+                                <!-- Grid column -->
+
+                                <hr class="w-100 clearfix d-md-none">
+
+                                <!-- Grid column -->
+                                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Chính sách dịch vụ</h6>
+                                    <p>
+                                        <a href="#!">Điều khoản và dịch vụ</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Quy chế hoạt động</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Câu hỏi thường gặp</a>
+                                    </p>
+                                    <p>
+                                        <a href="#!">Tuyển dụng</a>
+                                    </p>
+                                </div>
+
+                                <!-- Grid column -->
+                                <hr class="w-100 clearfix d-md-none">
+
+                                <!-- Grid column -->
+                                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                                    <h6 class="text-uppercase mb-4 font-weight-bold">Liên Hệ</h6>
+                                    <p>
+                                        <i class="fas fa-home mr-3"></i>Cao Lỗ, P4, Quận 8, TP.HCM</p>
+                                    <p>
+                                        <i class="fas fa-envelope mr-3"></i>lethanhcong1009@gmail.com</p>
+                                    <p>
+                                        <i class="fas fa-phone mr-3"></i> 036 666 6566</p>
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Footer links -->
+
+                            <hr>
+
+                            <!-- Grid row -->
+                            <div class="row d-flex align-items-center">
+
+                                <!-- Grid column -->
+                                <div class="col-md-7 col-lg-8">
+
+                                    <!--Copyright-->
+                                    <p class="text-center text-md-left">© 2020 Copyright:
+                                        <a href="lethanhcong.tk">
+                                            <strong> lethanhcong.tk</strong>
+                                        </a>
+                                    </p>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-md-5 col-lg-4 ml-lg-0">
+
+                                    <!-- Social buttons -->
+                                    <div class="text-center text-md-right">
+                                        <ul class="list-unstyled list-inline">
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-twitter"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                                <!-- Grid column -->
+
+                            </div>
+                            <!-- Grid row -->
+
+                        </div>
+                        <!-- Footer Links -->
+
+                    </footer>
+                    <!-- Footer -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
